@@ -22,5 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('contact/', views.contact, name='contact'),
-    re_path(r'^products/', include('catalog.urls', namespace='catalog'))
+    re_path(r'^catalog/', include('catalog.urls', namespace='catalog'))
 ]
